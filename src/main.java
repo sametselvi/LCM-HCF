@@ -1,41 +1,50 @@
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
-        int mat, fizik, kimya, turkce, tarih, muzik;
+
+
+        int kg;
+
+        double boy;
 
         Scanner inp = new Scanner(System.in);
-        System.out.print("Matematik notunuzu giriniz : ");
-        mat = inp.nextInt();
 
-        System.out.print("Fizik notunuzu giriniz : ");
-        fizik = inp.nextInt();
+        System.out.println("Lutfen kilonuzu giriniz : ");
 
-        System.out.print("Kimya notunuzu giriniz : ");
-        kimya = inp.nextInt();
+        kg = inp.nextInt();
 
-        System.out.print("Türkçe notunuzu giriniz : ");
-        turkce = inp.nextInt();
+        System.out.println("Lütfen boyunuzu (metre cinsinde) giriniz :");
 
-        System.out.print("Tarih notunuzu giriniz : ");
-        tarih = inp.nextInt();
+        boy = inp.nextDouble();
 
-        System.out.print("Müzik notunuzu giriniz : ");
-        muzik = inp.nextInt();
+        double vki = kg / (boy * boy);
 
-        int toplam = mat + fizik + kimya + turkce + tarih + muzik;
-        double sonuc = toplam / 6;
+        System.out.println("Vücut Kitle İndeksiniz : " + vki);
 
-        System.out.println("Ortalamanız : " + sonuc);
 
-        String str = sonuc >= 60.0 ? "Gecti" : "Kaldı";
 
-        System.out.println(str);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }
-
-
-
-
-
